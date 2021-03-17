@@ -12,7 +12,7 @@
       "configOverride": {
         "schemaSuffix": "_dev"
       },
-      "gitRef": "rebekkamoyson_dev"
+      "gitRef": "master"
     }
   ]
 }
