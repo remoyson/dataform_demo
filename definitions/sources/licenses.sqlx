@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: "bigquery-public-data",
+  schema: "github_repos",
+  name: "licenses",
+  description: "table with license included per repository"
+}

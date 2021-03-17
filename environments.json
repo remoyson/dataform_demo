@@ -1,9 +1,18 @@
 {
-    "environments": [
-        {
-            "name": "production",
-            "configOverride": {},
-            "gitRef": "master"
-        }
-    ]
+  "environments": [
+    {
+      "name": "prd",
+      "configOverride": {
+        "schemaSuffix": "_prd"
+      },
+      "gitRef": "master"
+    },
+    {
+      "name": "dev",
+      "configOverride": {
+        "schemaSuffix": "_dev"
+      },
+      "gitRef": "rebekkamoyson_dev"
+    }
+  ]
 }
