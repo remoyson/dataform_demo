@@ -13,9 +13,9 @@ WITH commits_with_timezone as (
     ) as committer_local_datetime
   FROM
   ${
-    when(dataform.projectConfig.vars.environmentName === "dev",
-            '${ref("sample_commits")}',
-            '${ref("commits")}'
+    when(dataform.projectConfig.vars.environmentName === "prd",
+            ref("commits"),
+            ref("sample_commits")
           )
         }
     as commits
