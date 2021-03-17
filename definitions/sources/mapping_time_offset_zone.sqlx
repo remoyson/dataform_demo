@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: "avid-keel-307109",
+  schema: "rebekka_prd",
+  name: "mapping_time_offset_zone",
+  description: "table with reference data mapping"
+}
