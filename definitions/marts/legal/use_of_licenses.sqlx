@@ -1,10 +1,18 @@
 config {
   type: "view",
-  description: "number of repos that use certain license"
+  description: "number of repos that use certain license",
+  assertions: {
+    uniqueKey: ["license"],
+    nonNull: ["license"]
+  }
 }
+
 SELECT
-license,
-count(1) as n_of_licenses
-FROM ${ref("licenses")}
-GROUP BY license
-ORDER BY n_of_licenses DESC
+  license,
+  count(1) as n_of_licenses
+FROM
+  ${ref("licenses")}
+GROUP BY
+  license
+ORDER BY
+  n_of_licenses DESC
