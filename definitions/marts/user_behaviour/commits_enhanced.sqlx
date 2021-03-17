@@ -1,6 +1,6 @@
 config {
   type: "view",
-  description: "number of repos that use certain license"
+  description: "commits enhanced with local datetime"
 }
 
 WITH commits_with_timezone as (
